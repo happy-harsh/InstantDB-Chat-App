@@ -22,7 +22,7 @@ Hurray!!
 
 ## Challenges Faced
 
-1. Integrating in IndexedDb
+1. Integrating with IndexedDb
 
     
 
