@@ -32,14 +32,12 @@ export default function MessageContainer() {
 
 
   if (isLoading) {
-    console.log("Fetching messages...");
-    return <p>Loading messages...</p>;
+    return <div className="message-container">Loading messages...</div>;
   }
 
 
   if (error) {
-    console.error("Error fetching messages:", error.message);
-    return <p>Error fetching messages: {error.message}</p>;
+    return <div className="message-container">Error fetching messages: {error.message}</div>;
   }
 
   return (

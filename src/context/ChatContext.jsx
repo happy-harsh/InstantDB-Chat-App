@@ -58,7 +58,13 @@ export const ChatProvider = ({ children }) => {
     error: contactError,
     data: contactData,
   } = db.useQuery({
-    contacts: {},
+    contacts: {
+      // $: {
+      //   where: {
+      //     $not: { id: user.id },
+      //   },
+      // },
+    },
   });
 
   useEffect(() => {

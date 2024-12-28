@@ -4,9 +4,14 @@ import ContactList from "./components/ContactList";
 import ChatWindow from "./components/ChatWindow";
 import { useChat } from "./context/ChatContext";
 import CreateContactForm from "./components/CreateContactForm";
+import NetworkStatus from "./components/NetworkStatus";
+import { useOfflineSync } from "./hooks/useOfflineSync";
+
 
 export default function App() {
   const { isAuth, selectedContact, user, dispatch } = useChat();
+
+  useOfflineSync()
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
@@ -15,6 +20,7 @@ export default function App() {
 
   return (
     <>
+    <NetworkStatus/>
       {!isAuth ? (
         <CreateContactForm />
       ) : (
