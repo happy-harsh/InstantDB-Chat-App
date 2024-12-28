@@ -1,0 +1,25 @@
+/src
+  ├── /assets                # Images, fonts, and other static assets
+  ├── /components            # Reusable UI components (e.g., buttons, inputs)
+  │   ├── /ChatWindow        # Chat window component
+  │   ├── /ContactList       # Contact list component
+  │   └── /MessageInput      # Message input component
+  ├── /context               # Context providers (if used)
+  │   └── /AppContext.js     # Global state management with context
+  ├── /hooks                 # Custom hooks (e.g., for interacting with InstantDB)
+  │   ├── useInstantDb.js    # Hook to manage InstantDB connection
+  │   ├── useMessages.js     # Hook to manage messages in chat
+  │   └── useContacts.js     # Hook for handling contacts (create, retrieve, etc.)
+  ├── /services              # API calls, database interaction, utility functions
+  │   └── instantDbService.js # Functionality for interacting with InstantDB
+  ├── /styles                # CSS/SCSS files for styling
+  │   ├── /global.css        # Global styles (reset, typography, etc.)
+  │   └── /ChatWindow.module.css  # Component-specific styles
+  ├── /pages                 # React Router or page-level components
+  │   ├── /HomePage.js       # Homepage or initial page of the app
+  │   └── /ChatPage.js       # Chat page where chat window is shown
+  ├── /utils                 # Utility functions (e.g., formatting)
+  │   └── formatMessage.js   # Helper to format messages before displaying
+  ├── App.js                 # Main entry point component
+  ├── index.js               # React entry point, renders the App
+  └── .env                   # Environment variables (appId for InstantDB, etc.)
