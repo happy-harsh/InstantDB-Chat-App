@@ -33,7 +33,7 @@ const ContactList = () => {
   console.log("Filtered contact list:", filteredContactList);
 
   return (
-    <div className="contact-list-container">
+    <div >
       <div className="contact-list-header">Contacts</div>
       <ul className="contact-list">
         {filteredContactList?.map((contact) => (
