@@ -106,7 +106,7 @@
   font-size: 24px;
   font-weight: bold;
   margin: 0;
-  color: plum;
+ 
 }
 
 .topNav .user-info {
@@ -161,7 +161,7 @@
   flex-direction: column;
   width: 100%;
 
-  overflow: hidden;
+  overflow-y:auto;
   border: 1px solid #ddd;
   border-radius: 8px;
 }
@@ -192,7 +192,7 @@
 
 .contact-list-item:hover {
   background-color: rgb(224, 247, 250, 0.2);
-  transform: scale(1.02);
+  
 }
 
 .contact-list-item.selected {
@@ -287,7 +287,7 @@
   width: 100%;
   margin: 10% 0;
 
-  /* overflow-y: scroll; */
+  overflow-y: auto;
   /* background: #000; */
 }
 

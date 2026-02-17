@@ -26,7 +26,7 @@ export default function App() {
       ) : (
         <div className="mainContainer">
           <div className="topNav">
-            <h1 className="title">HelloCat</h1>
+            <h1 className="title">Hello Chat</h1>
             <div className="user-info">{user?.name}</div>
             <button className="logout" onClick={handleLogout}>
               Logout
